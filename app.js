@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import env from 'dotenv';
 import nodemailer from 'nodemailer';
+import path from "path";
 
 env.config();
 
@@ -10,10 +11,21 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
   res.render('index.ejs');
+});
+
+app.get('/home', (req, res) => {
+  res.render('index.ejs');
+});
+
+app.get('/resume/Tanishq_WebDev_Resume.pdf', (req, res) => {
+  res.setHeader('Content-Type', 'application/pdf');
+  res.download(path.join(__dirname, 'public/resume/Tanishq_WebDev_Resume.pdf'));
 });
 
 app.post('/contact', (req, res) => {
