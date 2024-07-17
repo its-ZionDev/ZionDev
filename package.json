@@ -4,11 +4,8 @@
   "description": "Tanishq's work portfolio website",
   "main": "app.js",
   "type": "module",
-  "emgines": {
-    "node": "14.x"
-  },
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tanishq",
