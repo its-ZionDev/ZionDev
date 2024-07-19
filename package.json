@@ -1,13 +1,12 @@
 {
-  "name": "ziondev",
+  "name": "ziondev-app",
   "version": "1.0.0",
-  "description": "Tanishq's work portfolio website",
-  "main": "app.js",
-  "type": "module",
+  "description": "Welcome to ZionDev, a web application built using Node.js to showcase web development and game development projects.",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "Tanishq",
   "license": "ISC",
   "dependencies": {
@@ -15,6 +14,6 @@
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "nodemailer": "^6.9.13"
+    "nodemailer": "^6.9.14"
   }
 }
