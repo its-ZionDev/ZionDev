@@ -129,6 +129,3 @@ dist
 .yarn/install-state.gz
 .pnp.*
 .vercel
-
-# Vercel configuration
-vercel.json
