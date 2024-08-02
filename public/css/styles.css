@@ -579,6 +579,7 @@ body.dark-theme {
 .about-description {
   position: relative;
   font-size: var(--font-size-regular);
+  font-weight: var(--font-semibold);
   color: var(--color-title);
   margin-bottom: 1.5rem;
 }
@@ -601,7 +602,7 @@ body.dark-theme {
 .about-list {
   list-style: square;
   color: var(--color-title);
-  margin-bottom: 3rem;
+  margin-bottom: 1.75rem;
 }
 
 .about-buttons {
@@ -1442,7 +1443,7 @@ body.dark-theme {
     width: 80px;
     right: -48rem;
     top: initial;
-    bottom: -1rem;
+    bottom: 4rem;
     rotate: 30deg;
   }
 
@@ -1463,18 +1464,18 @@ body.dark-theme {
   }
 
   .about-description {
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
   }
 
   .about-description:after {
     width: 32px;
     height: 2px;
     left: -3rem;
-    top: 14px;
+    top: 9px;
   }
 
   .about-list {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .about-buttons {
